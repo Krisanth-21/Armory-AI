@@ -1,17 +1,24 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout, CtaButton } from "@/components/Layout";
-import { Seo } from '@/components/Seo';
+import { Seo, canonicalLink } from '@/components/Seo';
 import { useState, useEffect } from "react";
 
 export const Route = createFileRoute("/security")({
   head: () => ({
     meta: [
-      { title: "Security & Compliance â€” ARMORY" },
+      { title: "Security & Compliance - ARMORY" },
       {
         name: "description",
         content: "ARMORY is engineered with zero-trust architecture to satisfy HIPAA, SOC 2 Type II, and enterprise healthcare compliance standards.",
       },
+      { property: "og:title", content: "Security & Compliance - ARMORY" },
+      { property: "og:description", content: "ARMORY is engineered with zero-trust architecture to satisfy HIPAA, SOC 2 Type II, and enterprise healthcare compliance standards." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Security & Compliance - ARMORY" },
+      { name: "twitter:description", content: "Zero-trust architecture satisfying HIPAA, SOC 2 Type II, and enterprise healthcare compliance." },
     ],
+    links: [canonicalLink('/security')],
   }),
   component: SecurityPage,
 });
@@ -81,6 +88,11 @@ function SecurityPage() {
   }, []);
   return (
     <Layout>
+      <Seo
+        title="Security & Compliance - ARMORY"
+        description="ARMORY is engineered with zero-trust architecture to satisfy HIPAA, SOC 2 Type II, and enterprise healthcare compliance standards."
+        path="/security"
+      />
       {/* Hero */}
       <section className="relative overflow-hidden py-24 border-b border-white/5 bg-grid">
         <div className="absolute inset-0 bg-radial-glow opacity-30" />
@@ -118,26 +130,13 @@ function SecurityPage() {
               ))}
             </div>
 
-            {/* Compliance Circular Gauge */}
+            {/* Compliance Circular Gauge (Pure CSS) */}
             <div className="reveal-scale border border-white/10 bg-noir/50 p-8 rounded-2xl flex flex-col items-center justify-center text-center shadow-lg relative">
-              <svg className="w-40 h-40 transform -rotate-90">
-                <circle cx="80" cy="80" r="70" stroke="rgba(241,246,244,0.04)" strokeWidth="8" fill="transparent" />
-                <circle 
-                  cx="80" 
-                  cy="80" 
-                  r="70" 
-                  stroke="var(--color-saffron)" 
-                  strokeWidth="8" 
-                  fill="transparent" 
-                  strokeDasharray="440"
-                  strokeDashoffset="0"
-                  strokeLinecap="round"
-                  className="transition-all duration-1000 ease-out"
-                />
-              </svg>
-              <div className="absolute inset-0 flex flex-col items-center justify-center pt-8">
-                <span className="text-3xl font-bold font-mono text-saffron">100%</span>
-                <span className="text-[9px] font-mono-tech uppercase tracking-wider text-arctic/40 mt-1">Audit Ready</span>
+              <div className="w-40 h-40 rounded-full border-[8px] border-white/5 border-t-saffron border-r-saffron border-b-saffron border-l-saffron flex flex-col items-center justify-center relative transition-all duration-1000">
+                <div className="flex flex-col items-center justify-center">
+                  <span className="text-3xl font-bold font-mono text-saffron">100%</span>
+                  <span className="text-[9px] font-mono-tech uppercase tracking-wider text-arctic/40 mt-1">Audit Ready</span>
+                </div>
               </div>
               <div className="mt-6 text-sm font-semibold text-arctic">HIPAA & SOC 2 Verified</div>
               <div className="text-xs text-arctic/50 mt-1">Audit Checksum: 0x9fA2...2810</div>

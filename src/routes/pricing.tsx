@@ -1,17 +1,24 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout, CtaButton } from "@/components/Layout";
-import { Seo } from '@/components/Seo';
+import { Seo, canonicalLink } from '@/components/Seo';
 import { useState, useRef, useEffect } from "react";
 
 export const Route = createFileRoute("/pricing")({
   head: () => ({
     meta: [
-      { title: "Pricing & Calculator â€” ARMORY" },
+      { title: "Pricing & Calculator - ARMORY" },
       {
         name: "description",
         content: "Calculate your ARMORY edge VM runtimes and select custom healthcare compliance billing cycles.",
       },
+      { property: "og:title", content: "Pricing & Calculator - ARMORY" },
+      { property: "og:description", content: "Calculate your ARMORY edge VM runtimes and select custom healthcare compliance billing cycles." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Pricing & Calculator - ARMORY" },
+      { name: "twitter:description", content: "Calculate your ARMORY edge VM runtimes and select custom healthcare compliance billing cycles." },
     ],
+    links: [canonicalLink('/pricing')],
   }),
   component: PricingPage,
 });
@@ -117,6 +124,11 @@ function PricingPage() {
 
   return (
     <Layout>
+      <Seo
+        title="Pricing & Calculator - ARMORY"
+        description="Calculate your ARMORY edge VM runtimes and select custom healthcare compliance billing cycles."
+        path="/pricing"
+      />
       {/* Hero Header */}
       <section className="relative overflow-hidden py-24 border-b border-white/5 bg-grid">
         <div className="absolute inset-0 bg-radial-glow opacity-30" />

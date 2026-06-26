@@ -1,17 +1,25 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
-import { Seo } from '@/components/Seo';
+import { Seo, canonicalLink } from '@/components/Seo';
 import { useState } from "react";
+import { Cube16SolidIcon } from "@/components/Svgs";
 
 export const Route = createFileRoute("/changelog")({
   head: () => ({
     meta: [
-      { title: "Changelog â€” ARMORY" },
+      { title: "Changelog - ARMORY" },
       {
         name: "description",
         content: "Stay up to date with the latest ARMORY platform updates, features, and improvements.",
       },
+      { property: "og:title", content: "Changelog - ARMORY" },
+      { property: "og:description", content: "Stay up to date with the latest ARMORY platform updates, features, and improvements." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Changelog - ARMORY" },
+      { name: "twitter:description", content: "Stay up to date with the latest ARMORY platform updates, features, and improvements." },
     ],
+    links: [canonicalLink('/changelog')],
   }),
   component: ChangelogPage,
 });
@@ -87,13 +95,10 @@ function ChangelogPage() {
   return (
     <Layout>
       <Seo
-        title='ARMORY - AI-Powered Enterprise Automation'
-        description='Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems.'
-        path='/' />
-      <Seo
-        title="ARMORY - AI-Powered Enterprise Automation"
-        description="Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems."
-        path="/" />
+        title="Changelog - ARMORY"
+        description="Stay up to date with the latest ARMORY platform updates, features, and improvements."
+        path="/changelog"
+      />
       {/* Hero */}
       <section className="relative overflow-hidden py-24 border-b border-white/5 bg-grid">
         <div className="absolute inset-0 bg-radial-glow opacity-30" />
@@ -146,9 +151,7 @@ function ChangelogPage() {
                   {/* Version node */}
                   <div className="flex items-center gap-4 mb-8">
                     <div className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full bg-noir border-2 border-forsythia/50">
-                      <svg className="w-4 h-4 text-forsythia" viewBox="0 0 16 16" fill="currentColor">
-                        <path d="M8.372 1.349a.75.75 0 0 0-.744 0l-4.81 2.748L8 7.131l5.182-3.034zM14 5.357L8.75 8.43v6.005l4.872-2.784A.75.75 0 0 0 14 11zm-6.75 9.078V8.43L2 5.357V11c0 .27.144.518.378.651z" />
-                      </svg>
+                      <Cube16SolidIcon className="w-4 h-4 text-forsythia" />
                     </div>
                     <div>
                       <div className="flex items-center gap-3">

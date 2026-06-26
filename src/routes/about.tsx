@@ -1,16 +1,29 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout, CtaButton } from "@/components/Layout";
-import { Seo } from '@/components/Seo';
+import { Seo, canonicalLink } from '@/components/Seo';
+import {
+  Cog8ToothIcon,
+  Cube16SolidIcon,
+  ArrowPathIcon,
+  ArrowTrendingUpIcon,
+} from "@/components/Svgs";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About ARMORY â€” Our Mission" },
+      { title: "About ARMORY - Our Mission" },
       {
         name: "description",
         content: "Learn about ARMORY's mission to build the most secure AI automation platform for healthcare.",
       },
+      { property: "og:title", content: "About ARMORY - Our Mission" },
+      { property: "og:description", content: "Learn about ARMORY's mission to build the most secure AI automation platform for healthcare." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "About ARMORY - Our Mission" },
+      { name: "twitter:description", content: "Learn about ARMORY's mission to build the most secure AI automation platform for healthcare." },
     ],
+    links: [canonicalLink('/about')],
   }),
   component: AboutPage,
 });
@@ -26,40 +39,22 @@ const VALUES = [
   {
     title: "Security First",
     desc: "Every line of code, every deployment, every decision is evaluated through the lens of patient data protection.",
-    icon: (
-      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-      </svg>
-    ),
+    icon: <Cog8ToothIcon className="w-6 h-6 text-forsythia" />,
   },
   {
     title: "Developer Empathy",
     desc: "We build for developers who ship under pressure. Clean APIs, zero config overhead, and docs that actually help.",
-    icon: (
-      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-      </svg>
-    ),
+    icon: <Cube16SolidIcon className="w-6 h-6 text-forsythia" />,
   },
   {
     title: "Radical Transparency",
     desc: "Open audit logs, public status pages, and compliance certificates available to every customer on every plan.",
-    icon: (
-      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <circle cx="12" cy="12" r="10" />
-        <path d="M12 6v6l4 2" />
-      </svg>
-    ),
+    icon: <ArrowPathIcon className="w-6 h-6 text-forsythia" />,
   },
   {
     title: "Relentless Performance",
-    desc: "Sub-50ms P99 latency isn't a target â€” it's a hard requirement. We optimize at the hardware level to deliver it.",
-    icon: (
-      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M13 7l-4 7h3l-1 5 4-7h-3l1-5z" />
-      </svg>
-    ),
+    desc: "Sub-50ms P99 latency isn't a target — it's a hard requirement. We optimize at the hardware level to deliver it.",
+    icon: <ArrowTrendingUpIcon className="w-6 h-6 text-forsythia" />,
   },
 ];
 
@@ -84,13 +79,11 @@ function AboutPage() {
   return (
     <Layout>
       <Seo
-        title='ARMORY - AI-Powered Enterprise Automation'
-        description='Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems.'
-        path='/' />
-      <Seo
-        title="ARMORY - AI-Powered Enterprise Automation"
-        description="Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems."
-        path="/" />
+        title="About ARMORY - Our Mission"
+        description="Learn about ARMORY's mission to build the most secure AI automation platform for healthcare."
+        path="/about"
+        schemaType="AboutPage"
+      />
       {/* Hero */}
       <section className="relative overflow-hidden py-24 border-b border-white/5 bg-grid">
         <div className="absolute inset-0 bg-radial-glow opacity-40" />

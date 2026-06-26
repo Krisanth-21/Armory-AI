@@ -1,17 +1,25 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout, CtaButton } from "@/components/Layout";
-import { Seo } from '@/components/Seo';
+import { Seo, canonicalLink } from '@/components/Seo';
 import { useState } from "react";
+import { LinkIcon } from "@/components/Svgs";
 
 export const Route = createFileRoute("/docs")({
   head: () => ({
     meta: [
-      { title: "API Reference & Documentation â€” ARMORY" },
+      { title: "API Reference & Documentation - ARMORY" },
       {
         name: "description",
         content: "Explore the ARMORY workflow engine API specifications and developer integrations.",
       },
+      { property: "og:title", content: "API Reference & Documentation - ARMORY" },
+      { property: "og:description", content: "Explore the ARMORY workflow engine API specifications and developer integrations." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "API Reference & Documentation - ARMORY" },
+      { name: "twitter:description", content: "Explore the ARMORY workflow engine API specifications and developer integrations." },
     ],
+    links: [canonicalLink('/docs')],
   }),
   component: DocsPage,
 });
@@ -116,13 +124,10 @@ function DocsPage() {
   return (
     <Layout>
       <Seo
-        title='ARMORY - AI-Powered Enterprise Automation'
-        description='Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems.'
-        path='/' />
-      <Seo
-        title="ARMORY - AI-Powered Enterprise Automation"
-        description="Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems."
-        path="/" />
+        title="API Reference & Documentation - ARMORY"
+        description="Explore the ARMORY workflow engine API specifications and developer integrations."
+        path="/docs"
+      />
       <div className="mx-auto max-w-7xl px-6 py-16 grid gap-12 md:grid-cols-[240px_1fr_1.2fr]">
         {/* Left Sidebar Navigation */}
         <aside className="space-y-6 text-sm border-r border-white/5 pr-6 hidden md:block">
@@ -324,10 +329,7 @@ function DocsPage() {
                 onClick={handleCopy}
                 className="font-mono-tech text-[10px] text-arctic/40 hover:text-forsythia transition cursor-pointer flex items-center gap-1"
               >
-                <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-                </svg>
+                <LinkIcon className="w-3.5 h-3.5" />
                 {copied ? "Copied!" : "Copy"}
               </button>
             </div>

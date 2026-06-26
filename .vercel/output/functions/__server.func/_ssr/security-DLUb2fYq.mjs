@@ -1,8 +1,9 @@
 import { o as __toESM } from "../_runtime.mjs";
-import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { n as Layout, t as CtaButton } from "./Layout-DlHL_R3D.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/security-DIeVYQpd.js
+import { t as Seo } from "./Seo-CUUaP3E4.mjs";
+import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
+import { c as CtaButton, u as Layout } from "./Layout-BrSet1XS.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/security-DLUb2fYq.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var COMPLIANCE_ITEMS = [
@@ -62,31 +63,31 @@ var DATA_FLOW_STEPS = [
 		step: "01",
 		name: "Data Ingress",
 		desc: "Encrypted TLS 1.3 channel receives payload at regional edge node",
-		icon: "↓"
+		icon: "â†“"
 	},
 	{
 		step: "02",
 		name: "PHI Detection",
 		desc: "NLP scanner identifies and flags protected health information fields",
-		icon: "⊛"
+		icon: "âŠ›"
 	},
 	{
 		step: "03",
 		name: "Token Redaction",
 		desc: "PHI tokens replaced with reversible cryptographic hashes (AES-256)",
-		icon: "◈"
+		icon: "â—ˆ"
 	},
 	{
 		step: "04",
 		name: "Isolated Processing",
 		desc: "Redacted payload processed in micro-VM with no network egress",
-		icon: "⬡"
+		icon: "â¬¡"
 	},
 	{
 		step: "05",
 		name: "Audit Commit",
 		desc: "Cryptographically signed audit log committed to immutable ledger",
-		icon: "✓"
+		icon: "âœ“"
 	}
 ];
 function SecurityPage() {
@@ -122,6 +123,11 @@ function SecurityPage() {
 		return () => clearInterval(interval);
 	}, []);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Layout, { children: [
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Seo, {
+			title: "Security & Compliance - ARMORY",
+			description: "ARMORY is engineered with zero-trust architecture to satisfy HIPAA, SOC 2 Type II, and enterprise healthcare compliance standards.",
+			path: "/security"
+		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 			className: "relative overflow-hidden py-24 border-b border-white/5 bg-grid",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-radial-glow opacity-30" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -167,37 +173,18 @@ function SecurityPage() {
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "reveal-scale border border-white/10 bg-noir/50 p-8 rounded-2xl flex flex-col items-center justify-center text-center shadow-lg relative",
 						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-								className: "w-40 h-40 transform -rotate-90",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("circle", {
-									cx: "80",
-									cy: "80",
-									r: "70",
-									stroke: "rgba(241,246,244,0.04)",
-									strokeWidth: "8",
-									fill: "transparent"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("circle", {
-									cx: "80",
-									cy: "80",
-									r: "70",
-									stroke: "var(--color-saffron)",
-									strokeWidth: "8",
-									fill: "transparent",
-									strokeDasharray: "440",
-									strokeDashoffset: "0",
-									strokeLinecap: "round",
-									className: "transition-all duration-1000 ease-out"
-								})]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "absolute inset-0 flex flex-col items-center justify-center pt-8",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "text-3xl font-bold font-mono text-saffron",
-									children: "100%"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "text-[9px] font-mono-tech uppercase tracking-wider text-arctic/40 mt-1",
-									children: "Audit Ready"
-								})]
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "w-40 h-40 rounded-full border-[8px] border-white/5 border-t-saffron border-r-saffron border-b-saffron border-l-saffron flex flex-col items-center justify-center relative transition-all duration-1000",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex flex-col items-center justify-center",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "text-3xl font-bold font-mono text-saffron",
+										children: "100%"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "text-[9px] font-mono-tech uppercase tracking-wider text-arctic/40 mt-1",
+										children: "Audit Ready"
+									})]
+								})
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 								className: "mt-6 text-sm font-semibold text-arctic",

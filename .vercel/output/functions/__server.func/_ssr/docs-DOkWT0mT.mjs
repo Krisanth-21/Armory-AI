@@ -1,8 +1,9 @@
 import { o as __toESM } from "../_runtime.mjs";
-import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { n as Layout } from "./Layout-DlHL_R3D.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/docs-Cn03r0K2.js
+import { t as Seo } from "./Seo-CUUaP3E4.mjs";
+import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
+import { d as LinkIcon, u as Layout } from "./Layout-BrSet1XS.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/docs-DOkWT0mT.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var CODE_EXAMPLES = {
@@ -78,22 +79,22 @@ var STATUS_CODES = [
 	},
 	{
 		code: "401",
-		desc: "Authentication failed — invalid API key",
+		desc: "Authentication failed â€” invalid API key",
 		color: "text-red-400"
 	},
 	{
 		code: "403",
-		desc: "IAM policy denied — insufficient permissions",
+		desc: "IAM policy denied â€” insufficient permissions",
 		color: "text-red-400"
 	},
 	{
 		code: "429",
-		desc: "Rate limit exceeded — retry after backoff",
+		desc: "Rate limit exceeded â€” retry after backoff",
 		color: "text-saffron"
 	},
 	{
 		code: "500",
-		desc: "Internal server error — contact support",
+		desc: "Internal server error â€” contact support",
 		color: "text-red-400"
 	}
 ];
@@ -157,7 +158,11 @@ function DocsPage() {
 		setCopiedResponse(true);
 		setTimeout(() => setCopiedResponse(false), 2e3);
 	};
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Layout, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Layout, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Seo, {
+		title: "API Reference & Documentation - ARMORY",
+		description: "Explore the ARMORY workflow engine API specifications and developer integrations.",
+		path: "/docs"
+	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		className: "mx-auto max-w-7xl px-6 py-16 grid gap-12 md:grid-cols-[240px_1fr_1.2fr]",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("aside", {
@@ -473,21 +478,7 @@ function DocsPage() {
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 							onClick: handleCopy,
 							className: "font-mono-tech text-[10px] text-arctic/40 hover:text-forsythia transition cursor-pointer flex items-center gap-1",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-								className: "w-3.5 h-3.5",
-								viewBox: "0 0 24 24",
-								fill: "none",
-								stroke: "currentColor",
-								strokeWidth: "2",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("rect", {
-									x: "9",
-									y: "9",
-									width: "13",
-									height: "13",
-									rx: "2",
-									ry: "2"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" })]
-							}), copied ? "Copied!" : "Copy"]
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LinkIcon, { className: "w-3.5 h-3.5" }), copied ? "Copied!" : "Copy"]
 						})]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("pre", {
 						className: "p-5 font-mono text-[11px] text-left text-arctic/85 overflow-x-auto whitespace-pre leading-relaxed h-[320px] bg-[#09131a]/50",
@@ -496,7 +487,7 @@ function DocsPage() {
 				})
 			})
 		]
-	}) });
+	})] });
 }
 //#endregion
 export { DocsPage as component };

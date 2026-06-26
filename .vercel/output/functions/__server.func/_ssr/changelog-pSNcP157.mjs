@@ -1,8 +1,9 @@
 import { o as __toESM } from "../_runtime.mjs";
-import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { n as Layout } from "./Layout-DlHL_R3D.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/changelog-BcYBh5Pe.js
+import { t as Seo } from "./Seo-CUUaP3E4.mjs";
+import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
+import { l as Cube16SolidIcon, u as Layout } from "./Layout-BrSet1XS.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/changelog-pSNcP157.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var RELEASES = [
@@ -148,6 +149,11 @@ function ChangelogPage() {
 		items: filter === "all" ? release.items : release.items.filter((item) => item.type === filter)
 	})).filter((release) => release.items.length > 0);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Layout, { children: [
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Seo, {
+			title: "Changelog - ARMORY",
+			description: "Stay up to date with the latest ARMORY platform updates, features, and improvements.",
+			path: "/changelog"
+		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 			className: "relative overflow-hidden py-24 border-b border-white/5 bg-grid",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-radial-glow opacity-30" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -205,12 +211,7 @@ function ChangelogPage() {
 								className: "flex items-center gap-4 mb-8",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "relative z-10 flex h-10 w-10 items-center justify-center rounded-full bg-noir border-2 border-forsythia/50",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-										className: "w-4 h-4 text-forsythia",
-										viewBox: "0 0 16 16",
-										fill: "currentColor",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M8.372 1.349a.75.75 0 0 0-.744 0l-4.81 2.748L8 7.131l5.182-3.034zM14 5.357L8.75 8.43v6.005l4.872-2.784A.75.75 0 0 0 14 11zm-6.75 9.078V8.43L2 5.357V11c0 .27.144.518.378.651z" })
-									})
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cube16SolidIcon, { className: "w-4 h-4 text-forsythia" })
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center gap-3",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
@@ -256,7 +257,7 @@ function ChangelogPage() {
 					className: "mt-16 text-center",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "inline-flex items-center gap-2 rounded-full border border-white/10 bg-noir/40 px-5 py-2.5 font-mono-tech text-[11px] uppercase tracking-wider text-arctic/40",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1.5 w-1.5 rounded-full bg-arctic/20" }), "Showing latest 5 releases · 48 total releases"]
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1.5 w-1.5 rounded-full bg-arctic/20" }), "Showing latest 5 releases Â· 48 total releases"]
 					})
 				})]
 			})

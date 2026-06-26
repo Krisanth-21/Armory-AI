@@ -1,58 +1,13 @@
 import { useState, useEffect, useRef, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 
-/* ---------- SVG Icons ---------- */
-export function SearchIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className={className}>
-      <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33l-1.42 1.42l-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
-    </svg>
-  );
-}
+import { SearchIcon, XMarkIcon, ChevronUpIcon, ChevronUpSolidIcon } from "./Svgs";
 
-export function XMarkIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
-      <path d="M6 18L18 6M6 6l12 12" />
-    </svg>
-  );
-}
-
-export function ChevronUpIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
-      <path d="m4.5 15.75l7.5-7.5l7.5 7.5" />
-    </svg>
-  );
-}
-
-export function ChevronUpSolidIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
-      <path fillRule="evenodd" d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z" clipRule="evenodd" />
-    </svg>
-  );
-}
+export { SearchIcon, XMarkIcon, ChevronUpIcon, ChevronUpSolidIcon };
 
 export function Logo({ className = "" }: { className?: string }) {
   return (
     <Link to="/" className={`inline-flex items-center gap-2 ${className}`}>
-      <svg
-        viewBox="0 0 24 24"
-        className="h-6 w-6 text-forsythia"
-        fill="none"
-        aria-hidden="true"
-      >
-        <path
-          d="M12 2L3 6v6c0 5 3.8 9.4 9 10 5.2-.6 9-5 9-10V6l-9-4z"
-          stroke="currentColor"
-          strokeWidth="1.6"
-        />
-        <path
-          d="M13 7l-4 7h3l-1 5 4-7h-3l1-5z"
-          fill="currentColor"
-        />
-      </svg>
       <span className="font-mono-tech text-sm font-semibold tracking-[0.18em] text-arctic">
         ARMORY
       </span>

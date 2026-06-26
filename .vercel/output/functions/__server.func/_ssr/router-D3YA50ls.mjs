@@ -1,12 +1,13 @@
 import { o as __toESM } from "../_runtime.mjs";
+import { n as require_jsx_runtime, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
+import { n as canonicalLink, t as Seo } from "./Seo-CUUaP3E4.mjs";
 import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
 import { M as useRouter, c as HeadContent, d as Outlet, f as lazyRouteComponent, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
-import { n as require_jsx_runtime, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-2TOPuSXU.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-D3YA50ls.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-B-acrcns.css";
+var styles_default = "/assets/styles-C2h6Aa5C.css";
 function reportLovableError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	window.__lovableEvents?.captureException?.(error, {
@@ -20,9 +21,13 @@ function reportLovableError(error, context = {}) {
 	});
 }
 function NotFoundComponent() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		className: "flex min-h-screen items-center justify-center bg-background px-4",
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Seo, {
+			title: "ARMORY - AI-Powered Enterprise Automation",
+			description: "Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems.",
+			path: "/"
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "max-w-md text-center",
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
@@ -46,7 +51,7 @@ function NotFoundComponent() {
 					})
 				})
 			]
-		})
+		})]
 	});
 }
 function ErrorComponent({ error, reset }) {
@@ -95,7 +100,7 @@ var Route$7 = createRootRouteWithContext()({
 				name: "viewport",
 				content: "width=device-width, initial-scale=1"
 			},
-			{ title: "ARMORY — Power your future with AI" },
+			{ title: "ARMORY â€” Power your future with AI" },
 			{
 				name: "description",
 				content: "ARMORY is the AI automation platform for healthcare. Build agents, automate processes and ship secure neural workflows."
@@ -106,7 +111,7 @@ var Route$7 = createRootRouteWithContext()({
 			},
 			{
 				property: "og:title",
-				content: "ARMORY — Power your future with AI"
+				content: "ARMORY â€” Power your future with AI"
 			},
 			{
 				property: "og:description",
@@ -163,71 +168,270 @@ function RootComponent() {
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {})
 	});
 }
-var $$splitComponentImporter$6 = () => import("./security-DIeVYQpd.mjs");
+var $$splitComponentImporter$6 = () => import("./security-DLUb2fYq.mjs");
 var Route$6 = createFileRoute("/security")({
-	head: () => ({ meta: [{ title: "Security & Compliance — ARMORY" }, {
-		name: "description",
-		content: "ARMORY is engineered with zero-trust architecture to satisfy HIPAA, SOC 2 Type II, and enterprise healthcare compliance standards."
-	}] }),
+	head: () => ({
+		meta: [
+			{ title: "Security & Compliance - ARMORY" },
+			{
+				name: "description",
+				content: "ARMORY is engineered with zero-trust architecture to satisfy HIPAA, SOC 2 Type II, and enterprise healthcare compliance standards."
+			},
+			{
+				property: "og:title",
+				content: "Security & Compliance - ARMORY"
+			},
+			{
+				property: "og:description",
+				content: "ARMORY is engineered with zero-trust architecture to satisfy HIPAA, SOC 2 Type II, and enterprise healthcare compliance standards."
+			},
+			{
+				property: "og:type",
+				content: "website"
+			},
+			{
+				name: "twitter:card",
+				content: "summary_large_image"
+			},
+			{
+				name: "twitter:title",
+				content: "Security & Compliance - ARMORY"
+			},
+			{
+				name: "twitter:description",
+				content: "Zero-trust architecture satisfying HIPAA, SOC 2 Type II, and enterprise healthcare compliance."
+			}
+		],
+		links: [canonicalLink("/security")]
+	}),
 	component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
-var $$splitComponentImporter$5 = () => import("./product-C7brMS39.mjs");
+var $$splitComponentImporter$5 = () => import("./product-sYgwIdTj.mjs");
 var Route$5 = createFileRoute("/product")({
-	head: () => ({ meta: [{ title: "Product & Architecture — ARMORY" }, {
-		name: "description",
-		content: "Deep dive into ARMORY's four core primitives: Zero-trust runtime, Composable agents, Edge-native compute, and Federated intelligence."
-	}] }),
+	head: () => ({
+		meta: [
+			{ title: "Product & Architecture - ARMORY" },
+			{
+				name: "description",
+				content: "Deep dive into ARMORY's four core primitives: Zero-trust runtime, Composable agents, Edge-native compute, and Federated intelligence."
+			},
+			{
+				property: "og:title",
+				content: "Product & Architecture - ARMORY"
+			},
+			{
+				property: "og:description",
+				content: "Deep dive into ARMORY's four core primitives: Zero-trust runtime, Composable agents, Edge-native compute, and Federated intelligence."
+			},
+			{
+				property: "og:type",
+				content: "website"
+			},
+			{
+				name: "twitter:card",
+				content: "summary_large_image"
+			},
+			{
+				name: "twitter:title",
+				content: "Product & Architecture - ARMORY"
+			},
+			{
+				name: "twitter:description",
+				content: "Deep dive into ARMORY's four core primitives for enterprise AI automation."
+			}
+		],
+		links: [canonicalLink("/product")]
+	}),
 	component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-var $$splitComponentImporter$4 = () => import("./pricing-DFXxWdf7.mjs");
+var $$splitComponentImporter$4 = () => import("./pricing-C-cNVDMY.mjs");
 var Route$4 = createFileRoute("/pricing")({
-	head: () => ({ meta: [{ title: "Pricing & Calculator — ARMORY" }, {
-		name: "description",
-		content: "Calculate your ARMORY edge VM runtimes and select custom healthcare compliance billing cycles."
-	}] }),
+	head: () => ({
+		meta: [
+			{ title: "Pricing & Calculator - ARMORY" },
+			{
+				name: "description",
+				content: "Calculate your ARMORY edge VM runtimes and select custom healthcare compliance billing cycles."
+			},
+			{
+				property: "og:title",
+				content: "Pricing & Calculator - ARMORY"
+			},
+			{
+				property: "og:description",
+				content: "Calculate your ARMORY edge VM runtimes and select custom healthcare compliance billing cycles."
+			},
+			{
+				property: "og:type",
+				content: "website"
+			},
+			{
+				name: "twitter:card",
+				content: "summary_large_image"
+			},
+			{
+				name: "twitter:title",
+				content: "Pricing & Calculator - ARMORY"
+			},
+			{
+				name: "twitter:description",
+				content: "Calculate your ARMORY edge VM runtimes and select custom healthcare compliance billing cycles."
+			}
+		],
+		links: [canonicalLink("/pricing")]
+	}),
 	component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-var $$splitComponentImporter$3 = () => import("./docs-Cn03r0K2.mjs");
+var $$splitComponentImporter$3 = () => import("./docs-DOkWT0mT.mjs");
 var Route$3 = createFileRoute("/docs")({
-	head: () => ({ meta: [{ title: "API Reference & Documentation — ARMORY" }, {
-		name: "description",
-		content: "Explore the ARMORY workflow engine API specifications and developer integrations."
-	}] }),
+	head: () => ({
+		meta: [
+			{ title: "API Reference & Documentation - ARMORY" },
+			{
+				name: "description",
+				content: "Explore the ARMORY workflow engine API specifications and developer integrations."
+			},
+			{
+				property: "og:title",
+				content: "API Reference & Documentation - ARMORY"
+			},
+			{
+				property: "og:description",
+				content: "Explore the ARMORY workflow engine API specifications and developer integrations."
+			},
+			{
+				property: "og:type",
+				content: "website"
+			},
+			{
+				name: "twitter:card",
+				content: "summary_large_image"
+			},
+			{
+				name: "twitter:title",
+				content: "API Reference & Documentation - ARMORY"
+			},
+			{
+				name: "twitter:description",
+				content: "Explore the ARMORY workflow engine API specifications and developer integrations."
+			}
+		],
+		links: [canonicalLink("/docs")]
+	}),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("./changelog-BcYBh5Pe.mjs");
+var $$splitComponentImporter$2 = () => import("./changelog-pSNcP157.mjs");
 var Route$2 = createFileRoute("/changelog")({
-	head: () => ({ meta: [{ title: "Changelog — ARMORY" }, {
-		name: "description",
-		content: "Stay up to date with the latest ARMORY platform updates, features, and improvements."
-	}] }),
+	head: () => ({
+		meta: [
+			{ title: "Changelog - ARMORY" },
+			{
+				name: "description",
+				content: "Stay up to date with the latest ARMORY platform updates, features, and improvements."
+			},
+			{
+				property: "og:title",
+				content: "Changelog - ARMORY"
+			},
+			{
+				property: "og:description",
+				content: "Stay up to date with the latest ARMORY platform updates, features, and improvements."
+			},
+			{
+				property: "og:type",
+				content: "website"
+			},
+			{
+				name: "twitter:card",
+				content: "summary_large_image"
+			},
+			{
+				name: "twitter:title",
+				content: "Changelog - ARMORY"
+			},
+			{
+				name: "twitter:description",
+				content: "Stay up to date with the latest ARMORY platform updates, features, and improvements."
+			}
+		],
+		links: [canonicalLink("/changelog")]
+	}),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-var $$splitComponentImporter$1 = () => import("./about-BKORY_0c.mjs");
+var $$splitComponentImporter$1 = () => import("./about-DuxmN6Da.mjs");
 var Route$1 = createFileRoute("/about")({
-	head: () => ({ meta: [{ title: "About ARMORY — Our Mission" }, {
-		name: "description",
-		content: "Learn about ARMORY's mission to build the most secure AI automation platform for healthcare."
-	}] }),
+	head: () => ({
+		meta: [
+			{ title: "About ARMORY - Our Mission" },
+			{
+				name: "description",
+				content: "Learn about ARMORY's mission to build the most secure AI automation platform for healthcare."
+			},
+			{
+				property: "og:title",
+				content: "About ARMORY - Our Mission"
+			},
+			{
+				property: "og:description",
+				content: "Learn about ARMORY's mission to build the most secure AI automation platform for healthcare."
+			},
+			{
+				property: "og:type",
+				content: "website"
+			},
+			{
+				name: "twitter:card",
+				content: "summary_large_image"
+			},
+			{
+				name: "twitter:title",
+				content: "About ARMORY - Our Mission"
+			},
+			{
+				name: "twitter:description",
+				content: "Learn about ARMORY's mission to build the most secure AI automation platform for healthcare."
+			}
+		],
+		links: [canonicalLink("/about")]
+	}),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./routes-B7ElBLoR.mjs");
+var $$splitComponentImporter = () => import("./routes-DuwHdkdD.mjs");
 var Route = createFileRoute("/")({
-	head: () => ({ meta: [
-		{ title: "ARMORY — Power your future with AI" },
-		{
-			name: "description",
-			content: "ARMORY is the AI automation platform for healthcare. Build agents, automate processes and ship secure neural workflows."
-		},
-		{
-			property: "og:title",
-			content: "ARMORY — Power your future with AI"
-		},
-		{
-			property: "og:description",
-			content: "Build secure AI workflows, custom agents and process automation for modern healthcare."
-		}
-	] }),
+	head: () => ({
+		meta: [
+			{ title: "ARMORY - Power your future with AI" },
+			{
+				name: "description",
+				content: "ARMORY is the AI automation platform for healthcare. Build agents, automate processes and ship secure neural workflows."
+			},
+			{
+				property: "og:title",
+				content: "ARMORY - Power your future with AI"
+			},
+			{
+				property: "og:description",
+				content: "Build secure AI workflows, custom agents and process automation for modern healthcare."
+			},
+			{
+				property: "og:type",
+				content: "website"
+			},
+			{
+				name: "twitter:card",
+				content: "summary_large_image"
+			},
+			{
+				name: "twitter:title",
+				content: "ARMORY - Power your future with AI"
+			},
+			{
+				name: "twitter:description",
+				content: "Build secure AI workflows, custom agents and process automation for modern healthcare."
+			}
+		],
+		links: [canonicalLink("/")]
+	}),
 	component: lazyRouteComponent($$splitComponentImporter, "component")
 });
 var SecurityRoute = Route$6.update({

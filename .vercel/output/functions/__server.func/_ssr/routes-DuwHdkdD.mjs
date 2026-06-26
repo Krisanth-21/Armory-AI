@@ -1,13 +1,14 @@
 import { o as __toESM } from "../_runtime.mjs";
-import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { n as Layout, t as CtaButton } from "./Layout-DlHL_R3D.mjs";
+import { t as Seo } from "./Seo-CUUaP3E4.mjs";
+import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
+import { a as ChevronLeftIcon, c as CtaButton, d as LinkIcon, f as LinkSolidIcon, i as ChevronDownIcon, l as Cube16SolidIcon, m as XMarkIcon, n as ArrowTrendingUpIcon, o as ChevronRightIcon, p as SearchIcon, r as ChartPieIcon, s as Cog8ToothIcon, t as ArrowPathIcon, u as Layout } from "./Layout-BrSet1XS.mjs";
 import { n as Menu, r as ArrowRight, t as X } from "../_libs/lucide-react.mjs";
 import { t as Slot } from "../_libs/radix-ui__react-slot.mjs";
 import { n as clsx, t as cva } from "../_libs/class-variance-authority+clsx.mjs";
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
 import { t as motion } from "../_libs/framer-motion.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-B7ElBLoR.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-DuwHdkdD.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function cn(...inputs) {
@@ -621,183 +622,11 @@ var HeroHeader = () => {
 	}) });
 };
 var Logo = ({ className }) => {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-		viewBox: "0 0 78 18",
-		fill: "none",
-		xmlns: "http://www.w3.org/2000/svg",
-		className: cn("h-5 w-auto", className),
-		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
-				d: "M3 0H5V18H3V0ZM13 0H15V18H13V0ZM18 3V5H0V3H18ZM0 15V13H18V15H0Z",
-				fill: "url(#logo-gradient)"
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
-				d: "M27.06 7.054V12.239C27.06 12.5903 27.1393 12.8453 27.298 13.004C27.468 13.1513 27.7513 13.225 28.148 13.225H29.338V14.84H27.808C26.9353 14.84 26.2667 14.636 25.802 14.228C25.3373 13.82 25.105 13.157 25.105 12.239V7.054H24V5.473H25.105V3.144H27.06V5.473H29.338V7.054H27.06ZM30.4782 10.114C30.4782 9.17333 30.6709 8.34033 31.0562 7.615C31.4529 6.88967 31.9855 6.32867 32.6542 5.932C33.3342 5.524 34.0822 5.32 34.8982 5.32C35.6349 5.32 36.2752 5.46733 36.8192 5.762C37.3745 6.04533 37.8165 6.40233 38.1452 6.833V5.473H40.1002V14.84H38.1452V13.446C37.8165 13.888 37.3689 14.2563 36.8022 14.551C36.2355 14.8457 35.5895 14.993 34.8642 14.993C34.0595 14.993 33.3229 14.789 32.6542 14.381C31.9855 13.9617 31.4529 13.3837 31.0562 12.647C30.6709 11.899 30.4782 11.0547 30.4782 10.114ZM38.1452 10.148C38.1452 9.502 38.0092 8.941 37.7372 8.465C37.4765 7.989 37.1309 7.62633 36.7002 7.377C36.2695 7.12767 35.8049 7.003 35.3062 7.003C34.8075 7.003 34.3429 7.12767 33.9122 7.377C33.4815 7.615 33.1302 7.972 32.8582 8.448C32.5975 8.91267 32.4672 9.468 32.4672 10.114ZM32.4672 10.114C32.4672 10.76 32.5975 11.3267 32.8582 11.814C33.1302 12.3013 33.4815 12.6753 33.9122 12.936C34.3542 13.1853 34.8189 13.31 35.3062 13.31C35.8049 13.31 36.2695 13.1853 36.7002 12.936C37.1309 12.6867 37.4765 12.324 37.7372 11.848C38.0092 11.3607 38.1452 10.794 38.1452 10.148ZM43.6317 4.232C43.2803 4.232 42.9857 4.113 42.7477 3.875C42.5097 3.637 42.3907 3.34233 42.3907 2.991C42.3907 2.63967 42.5097 2.345 42.7477 2.107C42.9857 1.869 43.2803 1.75 43.6317 1.75C43.9717 1.75 44.2607 1.869 44.4987 2.107C44.7367 2.345 44.8557 2.63967 44.8557 2.991C44.8557 3.34233 44.7367 3.637 44.4987 3.875C44.2607 4.113 43.9717 4.232 43.6317 4.232ZM44.5837 5.473V14.84H42.6457V5.473H44.5837ZM49.0661 2.26V14.84H47.1281V2.26H49.0661ZM50.9645 10.114C50.9645 9.17333 51.1572 8.34033 51.5425 7.615C51.9392 6.88967 52.4719 6.32867 53.1405 5.932C53.8205 5.524 54.5685 5.32 55.3845 5.32C56.1212 5.32 56.7615 5.46733 57.3055 5.762C57.8609 6.04533 58.3029 6.40233 58.6315 6.833V5.473H60.5865V14.84H58.6315V13.446C58.3029 13.888 57.8552 14.2563 57.2885 14.551C56.7219 14.8457 56.0759 14.993 55.3505 14.993C54.5459 14.993 53.8092 14.789 53.1405 14.381C52.4719 13.9617 51.9392 13.3837 51.5425 12.647C51.1572 11.899 50.9645 11.0547 50.9645 10.114ZM58.6315 10.148C58.6315 9.502 58.4955 8.941 58.2235 8.465C57.9629 7.989 57.6172 7.62633 57.1865 7.377C56.7559 7.12767 56.2912 7.003 55.7925 7.003C55.2939 7.003 54.8292 7.12767 54.3985 7.377C53.9679 7.615 53.6165 7.972 53.3445 8.448C53.0839 8.91267 52.9535 9.468 52.9535 10.114C52.9535 10.76 53.0839 11.3267 53.3445 11.814C53.6165 12.3013 53.9679 12.6753 54.3985 12.936C54.8405 13.1853 55.3052 13.31 55.7925 13.31C56.2912 13.31 56.7559 13.1853 57.1865 12.936C57.6172 12.6867 57.9629 12.324 58.2235 11.848C58.4955 11.3607 58.6315 10.794 58.6315 10.148ZM65.07 6.833C65.3533 6.357 65.7273 5.98867 66.192 5.728C66.668 5.456 67.229 5.32 67.875 5.32V7.326H67.382C66.6227 7.326 66.0447 7.51867 65.648 7.904C65.2627 8.28933 65.07 8.958 65.07 9.91V14.84H63.132V5.473H65.07V6.833ZM73.3624 10.165L77.6804 14.84H75.0624L71.5944 10.811V14.84H69.6564V2.26H71.5944V9.57L74.9944 5.473H77.6804L73.3624 10.165Z",
-				fill: "currentColor"
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("defs", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("linearGradient", {
-				id: "logo-gradient",
-				x1: "10",
-				y1: "0",
-				x2: "10",
-				y2: "20",
-				gradientUnits: "userSpaceOnUse",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("stop", { stopColor: "#9B99FE" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("stop", {
-					offset: "1",
-					stopColor: "#2BC8B7"
-				})]
-			}) })
-		]
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+		className: cn("font-mono-tech text-sm font-semibold tracking-[0.18em] text-arctic", className),
+		children: "ARMORY"
 	});
 };
-function SearchIcon({ className = "" }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-		xmlns: "http://www.w3.org/2000/svg",
-		viewBox: "0 0 20 20",
-		fill: "currentColor",
-		className,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33l-1.42 1.42l-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" })
-	});
-}
-function XMarkIcon({ className = "" }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-		xmlns: "http://www.w3.org/2000/svg",
-		viewBox: "0 0 24 24",
-		fill: "none",
-		stroke: "currentColor",
-		strokeWidth: "1.5",
-		strokeLinecap: "round",
-		strokeLinejoin: "round",
-		className,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M6 18L18 6M6 6l12 12" })
-	});
-}
-function ArrowPathIcon({ className = "" }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-		xmlns: "http://www.w3.org/2000/svg",
-		viewBox: "0 0 24 24",
-		fill: "none",
-		stroke: "currentColor",
-		strokeWidth: "1.5",
-		strokeLinecap: "round",
-		strokeLinejoin: "round",
-		className,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" })
-	});
-}
-function ArrowTrendingUpIcon({ className = "" }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-		xmlns: "http://www.w3.org/2000/svg",
-		viewBox: "0 0 24 24",
-		fill: "none",
-		stroke: "currentColor",
-		strokeWidth: "1.5",
-		strokeLinecap: "round",
-		strokeLinejoin: "round",
-		className,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 0 1 5.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" })
-	});
-}
-function ChartPieIcon({ className = "" }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-		xmlns: "http://www.w3.org/2000/svg",
-		viewBox: "0 0 24 24",
-		fill: "none",
-		stroke: "currentColor",
-		strokeWidth: "1.5",
-		strokeLinecap: "round",
-		strokeLinejoin: "round",
-		className,
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" })]
-	});
-}
-function Cog8ToothIcon({ className = "" }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-		xmlns: "http://www.w3.org/2000/svg",
-		viewBox: "0 0 24 24",
-		fill: "none",
-		stroke: "currentColor",
-		strokeWidth: "1.5",
-		strokeLinecap: "round",
-		strokeLinejoin: "round",
-		className,
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93c.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204c.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78c-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107c-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93c-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204c-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78c.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107c.397-.165.71-.505.78-.929l.15-.894Z" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z" })]
-	});
-}
-function Cube16SolidIcon({ className = "" }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-		xmlns: "http://www.w3.org/2000/svg",
-		viewBox: "0 0 16 16",
-		fill: "currentColor",
-		className,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M8.372 1.349a.75.75 0 0 0-.744 0l-4.81 2.748L8 7.131l5.182-3.034zM14 5.357L8.75 8.43v6.005l4.872-2.784A.75.75 0 0 0 14 11zm-6.75 9.078V8.43L2 5.357V11c0 .27.144.518.378.651z" })
-	});
-}
-function LinkSolidIcon({ className = "" }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-		xmlns: "http://www.w3.org/2000/svg",
-		viewBox: "0 0 24 24",
-		fill: "currentColor",
-		className,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
-			fillRule: "evenodd",
-			d: "M19.902 4.098a3.75 3.75 0 0 0-5.304 0l-4.5 4.5a3.75 3.75 0 0 0 1.035 6.037a.75.75 0 0 1-.646 1.353a5.25 5.25 0 0 1-1.449-8.45l4.5-4.5a5.25 5.25 0 1 1 7.424 7.424l-1.757 1.757a.75.75 0 1 1-1.06-1.06l1.757-1.757a3.75 3.75 0 0 0 0-5.304Zm-7.389 4.267a.75.75 0 0 1 1-.353a5.25 5.25 0 0 1 1.449 8.45l-4.5 4.5a5.25 5.25 0 1 1-7.424-7.424l1.757-1.757a.75.75 0 1 1 1.06 1.06l-1.757 1.757a3.75 3.75 0 1 0 5.304 5.304l4.5-4.5a3.75 3.75 0 0 0-1.035-6.037a.75.75 0 0 1-.354-1Z",
-			clipRule: "evenodd"
-		})
-	});
-}
-function LinkIcon({ className = "" }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-		xmlns: "http://www.w3.org/2000/svg",
-		viewBox: "0 0 24 24",
-		fill: "none",
-		stroke: "currentColor",
-		strokeWidth: "1.5",
-		strokeLinecap: "round",
-		strokeLinejoin: "round",
-		className,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" })
-	});
-}
-function ChevronDownIcon({ className = "" }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-		xmlns: "http://www.w3.org/2000/svg",
-		viewBox: "0 0 24 24",
-		fill: "none",
-		stroke: "currentColor",
-		strokeWidth: "1.5",
-		strokeLinecap: "round",
-		strokeLinejoin: "round",
-		className,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "m19.5 8.25l-7.5 7.5l-7.5-7.5" })
-	});
-}
-function ChevronLeftIcon({ className = "" }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-		xmlns: "http://www.w3.org/2000/svg",
-		viewBox: "0 0 24 24",
-		fill: "none",
-		stroke: "currentColor",
-		strokeWidth: "1.5",
-		strokeLinecap: "round",
-		strokeLinejoin: "round",
-		className,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M15.75 19.5L8.25 12l7.5-7.5" })
-	});
-}
-function ChevronRightIcon({ className = "" }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-		xmlns: "http://www.w3.org/2000/svg",
-		viewBox: "0 0 24 24",
-		fill: "none",
-		stroke: "currentColor",
-		strokeWidth: "1.5",
-		strokeLinecap: "round",
-		strokeLinejoin: "round",
-		className,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "m8.25 4.5l7.5 7.5l-7.5 7.5" })
-	});
-}
 var CLIENT_LOGOS = [
 	"AETNA",
 	"CIGNA",
@@ -850,7 +679,7 @@ function Hero() {
 						className: "animate-boot mt-10 grid gap-4 sm:grid-cols-[auto_1fr] sm:items-center",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CtaButton, { children: "Build a Workflow" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "flex items-center gap-3 font-mono-tech text-[11px] uppercase tracking-wider text-arctic/50",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-px w-8 bg-white/15" }), "SOC 2 · HIPAA · ISO 27001"]
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-px w-8 bg-white/15" }), "SOC 2 Â· HIPAA Â· ISO 27001"]
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
@@ -982,7 +811,7 @@ var FEATURES = [
 		k: "Secure Guard",
 		t: "Zero-trust runtime",
 		d: "End-to-end encryption, PHI redaction and per-agent IAM enforced at every hop.",
-		s: "AES-256 · HIPAA",
+		s: "AES-256 Â· HIPAA",
 		icon: (className) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(LinkSolidIcon, { className })
 	},
 	{
@@ -1061,7 +890,7 @@ function FeatureArchitecture() {
 									}),
 									"0",
 									i + 1,
-									" · ",
+									" Â· ",
 									f.k
 								]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -1114,7 +943,7 @@ function FeatureArchitecture() {
 										children: [
 											"0",
 											i + 1,
-											" · ",
+											" Â· ",
 											f.k
 										]
 									})]
@@ -1499,11 +1328,11 @@ function Pricing() {
 				factor: 1
 			},
 			EUR: {
-				symbol: "€",
+				symbol: "â‚¬",
 				factor: .92
 			},
 			INR: {
-				symbol: "₹",
+				symbol: "â‚¹",
 				factor: 83
 			}
 		}
@@ -1578,7 +1407,7 @@ function Pricing() {
 							className: "rounded-full px-4 py-1.5 transition-colors duration-200 text-arctic/70 hover:text-arctic cursor-pointer",
 							children: ["Annual ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 								className: "text-saffron",
-								children: "−20%"
+								children: "âˆ’20%"
 							})]
 						})]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -1594,16 +1423,16 @@ function Pricing() {
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
 									value: "EUR",
-									children: "EUR €"
+									children: "EUR â‚¬"
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
 									value: "INR",
-									children: "INR ₹"
+									children: "INR â‚¹"
 								})
 							]
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 							className: "pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-arctic/50",
-							children: "▾"
+							children: "â–¾"
 						})]
 					})]
 				})]
@@ -1676,11 +1505,11 @@ var FAQS = [
 	},
 	{
 		q: "Is ARMORY HIPAA compliant?",
-		a: "Yes — HIPAA, HITRUST, SOC 2 Type II and ISO 27001. We sign BAAs with every customer on Pro and Enterprise plans."
+		a: "Yes â€” HIPAA, HITRUST, SOC 2 Type II and ISO 27001. We sign BAAs with every customer on Pro and Enterprise plans."
 	},
 	{
 		q: "How long does deployment take?",
-		a: "Most teams ship their first production workflow in under 14 days. Enterprise federations average 6–8 weeks with our solutions team."
+		a: "Most teams ship their first production workflow in under 14 days. Enterprise federations average 6â€“8 weeks with our solutions team."
 	}
 ];
 function FAQ() {
@@ -1760,6 +1589,12 @@ function ArmoryLanding() {
 		setMounted(true);
 	}, []);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Layout, { children: [
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Seo, {
+			title: "ARMORY - Power your future with AI",
+			description: "ARMORY is the AI automation platform for healthcare. Build agents, automate processes and ship secure neural workflows.",
+			path: "/",
+			schemaType: "WebSite"
+		}),
 		mounted ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeroSection, { includeHeader: false }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Hero, {}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Integrations, {}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FeatureArchitecture, {}),

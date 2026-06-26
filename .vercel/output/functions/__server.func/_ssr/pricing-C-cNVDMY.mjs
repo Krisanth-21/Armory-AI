@@ -1,8 +1,9 @@
 import { o as __toESM } from "../_runtime.mjs";
-import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { n as Layout, t as CtaButton } from "./Layout-DlHL_R3D.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/pricing-DFXxWdf7.js
+import { t as Seo } from "./Seo-CUUaP3E4.mjs";
+import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
+import { c as CtaButton, u as Layout } from "./Layout-BrSet1XS.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/pricing-C-cNVDMY.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var BASE_PRICING = {
@@ -24,8 +25,8 @@ var BASE_PRICING = {
 };
 var SYMBOLS = {
 	USD: "$",
-	EUR: "€",
-	INR: "₹"
+	EUR: "â‚¬",
+	INR: "â‚¹"
 };
 var FEATURE_COMPARISON = [
 	{
@@ -48,9 +49,9 @@ var FEATURE_COMPARISON = [
 	},
 	{
 		feature: "SSO / SAML",
-		dev: "—",
-		pro: "✓",
-		ent: "✓"
+		dev: "â€”",
+		pro: "âœ“",
+		ent: "âœ“"
 	},
 	{
 		feature: "Audit log retention",
@@ -60,13 +61,13 @@ var FEATURE_COMPARISON = [
 	},
 	{
 		feature: "BAA agreement",
-		dev: "—",
-		pro: "✓",
-		ent: "✓"
+		dev: "â€”",
+		pro: "âœ“",
+		ent: "âœ“"
 	},
 	{
 		feature: "SLA guarantee",
-		dev: "—",
+		dev: "â€”",
 		pro: "99.9%",
 		ent: "99.99%"
 	},
@@ -78,15 +79,15 @@ var FEATURE_COMPARISON = [
 	},
 	{
 		feature: "Custom compliance policies",
-		dev: "—",
-		pro: "—",
-		ent: "✓"
+		dev: "â€”",
+		pro: "â€”",
+		ent: "âœ“"
 	},
 	{
 		feature: "On-premise deployment",
-		dev: "—",
-		pro: "—",
-		ent: "✓"
+		dev: "â€”",
+		pro: "â€”",
+		ent: "âœ“"
 	}
 ];
 var PRICING_FAQS = [
@@ -104,7 +105,7 @@ var PRICING_FAQS = [
 	},
 	{
 		q: "Is there a free trial for Pro?",
-		a: "Yes — all new accounts get 14 days of Professional features free. No credit card required to start."
+		a: "Yes â€” all new accounts get 14 days of Professional features free. No credit card required to start."
 	}
 ];
 function PriceValue({ tier }) {
@@ -162,6 +163,11 @@ function PricingPage() {
 		});
 	};
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Layout, { children: [
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Seo, {
+			title: "Pricing & Calculator - ARMORY",
+			description: "Calculate your ARMORY edge VM runtimes and select custom healthcare compliance billing cycles.",
+			path: "/pricing"
+		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 			className: "relative overflow-hidden py-24 border-b border-white/5 bg-grid",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-radial-glow opacity-30" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -251,9 +257,9 @@ function PricingPage() {
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 									className: "mt-6 space-y-2 text-xs text-arctic/70 font-mono-tech",
 									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "✓ 1,000 free claims/mo" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "✓ Shared edge compute nodes" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "✓ Community support channels" })
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "âœ“ 1,000 free claims/mo" }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "âœ“ Shared edge compute nodes" }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "âœ“ Community support channels" })
 									]
 								})
 							] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
@@ -288,10 +294,10 @@ function PricingPage() {
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 										className: "mt-6 space-y-2 text-xs text-arctic/70 font-mono-tech",
 										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "✓ 50,000 claims/mo" }),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "✓ Dedicated edge VM instances" }),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "✓ Business Associate Agreement (BAA)" }),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "✓ 24/7 technical assistance" })
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "âœ“ 50,000 claims/mo" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "âœ“ Dedicated edge VM instances" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "âœ“ Business Associate Agreement (BAA)" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "âœ“ 24/7 technical assistance" })
 										]
 									})
 								] }),
@@ -323,10 +329,10 @@ function PricingPage() {
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 									className: "mt-6 space-y-2 text-xs text-arctic/70 font-mono-tech",
 									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "✓ Unlimited transaction volume" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "✓ Isolated edge hardware VMs" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "✓ Custom compliance SLA" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "✓ Dedicated solutions engineer" })
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "âœ“ Unlimited transaction volume" }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "âœ“ Isolated edge hardware VMs" }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "âœ“ Custom compliance SLA" }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "âœ“ Dedicated solutions engineer" })
 									]
 								})
 							] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {

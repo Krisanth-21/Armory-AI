@@ -1,50 +1,57 @@
-import { Helmet } from 'react-helmet-async';
-
-interface SeoProps {
-  title: string;
-  description: string;
-  path?: string;
-  ogImage?: string;
-}
+/**
+ * Seo – lightweight SEO helper for ARMORY.
+ *
+ * Meta tags (title, description, OG, Twitter) are handled by TanStack Router's
+ * `head()` in each route config. This component adds **only** the pieces that
+ * `head()` cannot inject natively:
+ *   • JSON-LD structured data
+ *
+ * Drop <Seo /> anywhere in your page JSX – it renders an invisible <script>.
+ */
 
 const SITE_URL = 'https://armoryweb.vercel.app';
 
-export const Seo = ({
+interface SeoProps {
+  /** Page title (used in structured data) */
+  title: string;
+  /** Page meta description (used in structured data) */
+  description: string;
+  /** Path segment, e.g. "/about" */
+  path?: string;
+  /** Schema.org @type – defaults to "WebPage" */
+  schemaType?: string;
+}
+
+export function Seo({
   title,
   description,
   path = '/',
-  ogImage = '/og-image.png',
-}: SeoProps) => (
-  <Helmet>
-    <title>{title}</title>
-    <meta name='description' content={description} />
-    <link rel='canonical' href={`${SITE_URL}${path}`} />
+  schemaType = 'WebPage',
+}: SeoProps) {
+  const url = `${SITE_URL}${path}`;
 
-    {/* Open Graph */}
-    <meta property='og:title' content={title} />
-    <meta property='og:description' content={description} />
-    <meta property='og:url' content={`${SITE_URL}${path}`} />
-    <meta property='og:image' content={ogImage} />
-    <meta property='og:type' content='website' />
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': schemaType,
+    name: title,
+    description,
+    url,
+    publisher: {
+      '@type': 'Organization',
+      name: 'ARMORY',
+      url: SITE_URL,
+    },
+  };
 
-    {/* Twitter */}
-    <meta name='twitter:card' content='summary_large_image' />
-    <meta name='twitter:title' content={title} />
-    <meta name='twitter:description' content={description} />
-    <meta name='twitter:image' content={ogImage} />
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
 
-    {/* Structured Data */}
-    <script type='application/ld+json'>
-      {JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "url": SITE_URL,
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": `${SITE_URL}/search?q={search_term_string}`,
-          "query-input": "required name=search_term_string"
-        }
-      })}
-    </script>
-  </Helmet>
-);
+/** Helper to build a canonical link entry for head().links */
+export function canonicalLink(path: string) {
+  return { rel: 'canonical' as const, href: `${SITE_URL}${path}` };
+}

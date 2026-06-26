@@ -1,8 +1,9 @@
 import { o as __toESM } from "../_runtime.mjs";
-import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { n as Layout, t as CtaButton } from "./Layout-DlHL_R3D.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/product-C7brMS39.js
+import { t as Seo } from "./Seo-CUUaP3E4.mjs";
+import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
+import { c as CtaButton, f as LinkSolidIcon, l as Cube16SolidIcon, o as ChevronRightIcon, r as ChartPieIcon, s as Cog8ToothIcon, u as Layout } from "./Layout-BrSet1XS.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/product-sYgwIdTj.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var PRIMITIVES = [
@@ -11,97 +12,28 @@ var PRIMITIVES = [
 		t: "Zero-Trust Runtime",
 		d: "All workflows execute in cryptographically isolated micro-virtual machines. Features dynamic PHI redaction, localized model execution, and hardware-level IAM sandboxing.",
 		s: "HIPAA Compliant · PHI Redaction · AES-256",
-		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-			className: "w-8 h-8 text-forsythia mb-4",
-			viewBox: "0 0 24 24",
-			fill: "none",
-			stroke: "currentColor",
-			strokeWidth: "1.5",
-			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("rect", {
-					x: "3",
-					y: "11",
-					width: "18",
-					height: "11",
-					rx: "2",
-					ry: "2"
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M7 11V7a5 5 0 0 1 10 0v4" }),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("circle", {
-					cx: "12",
-					cy: "16",
-					r: "1.5"
-				})
-			]
-		})
+		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cog8ToothIcon, { className: "w-8 h-8 text-forsythia mb-4" })
 	},
 	{
 		n: "02",
 		t: "Composable Agents",
 		d: "Build complex reasoning workflows by chaining models, tools, and human review steps. Control threshold variables and decision graphs via simple, declarative JSON configurations.",
 		s: "Dynamic Routing · Human-in-the-Loop · Model Agnostic",
-		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-			className: "w-8 h-8 text-forsythia mb-4",
-			viewBox: "0 0 24 24",
-			fill: "none",
-			stroke: "currentColor",
-			strokeWidth: "1.5",
-			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("circle", {
-					cx: "12",
-					cy: "5",
-					r: "3"
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("circle", {
-					cx: "5",
-					cy: "19",
-					r: "3"
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("circle", {
-					cx: "19",
-					cy: "19",
-					r: "3"
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M12 8v8M7 17l3.5-3.5M17 17l-3.5-3.5" })
-			]
-		})
+		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(LinkSolidIcon, { className: "w-8 h-8 text-forsythia mb-4" })
 	},
 	{
 		n: "03",
 		t: "Edge-Native Compute",
 		d: "Deploy pipelines directly to regional edge nodes located close to your local clinical datacenters. Ensures ultra-low latency execution and prevents data leaving regional compliance boundaries.",
 		s: "Sub-50ms Latency · Regional Locks · Edge VMs",
-		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-			className: "w-8 h-8 text-forsythia mb-4",
-			viewBox: "0 0 24 24",
-			fill: "none",
-			stroke: "currentColor",
-			strokeWidth: "1.5",
-			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" })
-		})
+		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cube16SolidIcon, { className: "w-8 h-8 text-forsythia mb-4" })
 	},
 	{
 		n: "04",
 		t: "Federated Intelligence",
 		d: "Query siloed systems (EHR databases, claim queues, historical telemetry logs) securely. Compile and extract insights without centralizing raw compliance data.",
 		s: "FHIR HL7 Streams · Federated Queries · Audit Logs",
-		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-			className: "w-8 h-8 text-forsythia mb-4",
-			viewBox: "0 0 24 24",
-			fill: "none",
-			stroke: "currentColor",
-			strokeWidth: "1.5",
-			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ellipse", {
-					cx: "12",
-					cy: "5",
-					rx: "9",
-					ry: "3"
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5" }),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6" })
-			]
-		})
+		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChartPieIcon, { className: "w-8 h-8 text-forsythia mb-4" })
 	}
 ];
 var INTEGRATIONS = [
@@ -180,6 +112,11 @@ function ProductPage() {
 		}
 	];
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Layout, { children: [
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Seo, {
+			title: "Product & Architecture - ARMORY",
+			description: "Deep dive into ARMORY's four core primitives: Zero-trust runtime, Composable agents, Edge-native compute, and Federated intelligence.",
+			path: "/product"
+		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 			className: "relative overflow-hidden py-24 border-b border-white/5 bg-grid",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-radial-glow pointer-events-none opacity-60" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -304,14 +241,7 @@ function ProductPage() {
 							]
 						}), i < 3 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-6 h-6 rounded-full bg-noir border border-forsythia/30 items-center justify-center",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-								className: "w-3 h-3 text-forsythia",
-								viewBox: "0 0 24 24",
-								fill: "none",
-								stroke: "currentColor",
-								strokeWidth: "2",
-								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "m8.25 4.5l7.5 7.5l-7.5 7.5" })
-							})
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronRightIcon, { className: "w-3 h-3 text-forsythia" })
 						})]
 					}, l.layer))
 				})]
@@ -341,22 +271,10 @@ function ProductPage() {
 					className: "mt-16 border border-white/10 bg-noir/60 rounded-2xl p-6 md:p-12 backdrop-blur relative overflow-hidden reveal-scale",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "absolute top-[88px] left-[10%] right-[10%] h-8 hidden md:block z-0 pointer-events-none",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-								className: "w-full h-full",
-								fill: "none",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
-									d: "M 0 4 H 1000",
-									stroke: "rgba(241,246,244,0.06)",
-									strokeWidth: "4",
-									strokeLinecap: "round"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
-									d: `M 0 4 H ${activeStep * 200 + 100}`,
-									stroke: "var(--color-forsythia)",
-									strokeWidth: "4",
-									strokeLinecap: "round",
-									className: "animate-dash"
-								})]
+							className: "absolute top-[92px] left-[10%] right-[10%] h-1 bg-white/5 hidden md:block z-0 pointer-events-none",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "h-full bg-forsythia transition-all duration-500 ease-out",
+								style: { width: `${activeStep / 4 * 100}%` }
 							})
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
@@ -370,13 +288,9 @@ function ProductPage() {
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 											className: `w-14 h-14 rounded-full flex items-center justify-center border font-mono-tech text-sm transition-all duration-300 relative ${isActive ? "bg-forsythia border-forsythia text-noir scale-110 shadow-[0_0_20px_rgba(255,200,1,0.4)]" : isCompleted ? "bg-emerald-500/10 border-emerald-500 text-emerald-400" : "bg-noir border-white/15 text-arctic/40 group-hover:border-forsythia/50"}`,
-											children: [isCompleted ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-												className: "w-5 h-5",
-												fill: "none",
-												stroke: "currentColor",
-												strokeWidth: "2.5",
-												viewBox: "0 0 24 24",
-												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("polyline", { points: "20 6 9 17 4 12" })
+											children: [isCompleted ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-emerald-400 font-bold text-base",
+												children: "✓"
 											}) : `0${step.id}`, isActive && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "absolute -inset-1.5 rounded-full border border-forsythia/40 animate-ping pointer-events-none" })]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {

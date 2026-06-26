@@ -1,17 +1,31 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout, CtaButton } from "@/components/Layout";
-import { Seo } from '@/components/Seo';
+import { Seo, canonicalLink } from '@/components/Seo';
 import { useState, useEffect } from "react";
+import {
+  Cog8ToothIcon,
+  LinkSolidIcon,
+  Cube16SolidIcon,
+  ChartPieIcon,
+  ChevronRightIcon,
+} from "@/components/Svgs";
 
 export const Route = createFileRoute("/product")({
   head: () => ({
     meta: [
-      { title: "Product & Architecture â€” ARMORY" },
+      { title: "Product & Architecture - ARMORY" },
       {
         name: "description",
         content: "Deep dive into ARMORY's four core primitives: Zero-trust runtime, Composable agents, Edge-native compute, and Federated intelligence.",
       },
+      { property: "og:title", content: "Product & Architecture - ARMORY" },
+      { property: "og:description", content: "Deep dive into ARMORY's four core primitives: Zero-trust runtime, Composable agents, Edge-native compute, and Federated intelligence." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Product & Architecture - ARMORY" },
+      { name: "twitter:description", content: "Deep dive into ARMORY's four core primitives for enterprise AI automation." },
     ],
+    links: [canonicalLink('/product')],
   }),
   component: ProductPage,
 });
@@ -21,52 +35,29 @@ const PRIMITIVES = [
     n: "01",
     t: "Zero-Trust Runtime",
     d: "All workflows execute in cryptographically isolated micro-virtual machines. Features dynamic PHI redaction, localized model execution, and hardware-level IAM sandboxing.",
-    s: "HIPAA Compliant Â· PHI Redaction Â· AES-256",
-    icon: (
-      <svg className="w-8 h-8 text-forsythia mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-        <circle cx="12" cy="16" r="1.5" />
-      </svg>
-    )
+    s: "HIPAA Compliant · PHI Redaction · AES-256",
+    icon: <Cog8ToothIcon className="w-8 h-8 text-forsythia mb-4" />
   },
   {
     n: "02",
     t: "Composable Agents",
     d: "Build complex reasoning workflows by chaining models, tools, and human review steps. Control threshold variables and decision graphs via simple, declarative JSON configurations.",
-    s: "Dynamic Routing Â· Human-in-the-Loop Â· Model Agnostic",
-    icon: (
-      <svg className="w-8 h-8 text-forsythia mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <circle cx="12" cy="5" r="3" />
-        <circle cx="5" cy="19" r="3" />
-        <circle cx="19" cy="19" r="3" />
-        <path d="M12 8v8M7 17l3.5-3.5M17 17l-3.5-3.5" />
-      </svg>
-    )
+    s: "Dynamic Routing · Human-in-the-Loop · Model Agnostic",
+    icon: <LinkSolidIcon className="w-8 h-8 text-forsythia mb-4" />
   },
   {
     n: "03",
     t: "Edge-Native Compute",
     d: "Deploy pipelines directly to regional edge nodes located close to your local clinical datacenters. Ensures ultra-low latency execution and prevents data leaving regional compliance boundaries.",
-    s: "Sub-50ms Latency Â· Regional Locks Â· Edge VMs",
-    icon: (
-      <svg className="w-8 h-8 text-forsythia mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-      </svg>
-    )
+    s: "Sub-50ms Latency · Regional Locks · Edge VMs",
+    icon: <Cube16SolidIcon className="w-8 h-8 text-forsythia mb-4" />
   },
   {
     n: "04",
     t: "Federated Intelligence",
     d: "Query siloed systems (EHR databases, claim queues, historical telemetry logs) securely. Compile and extract insights without centralizing raw compliance data.",
-    s: "FHIR HL7 Streams Â· Federated Queries Â· Audit Logs",
-    icon: (
-      <svg className="w-8 h-8 text-forsythia mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <ellipse cx="12" cy="5" rx="9" ry="3" />
-        <path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5" />
-        <path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6" />
-      </svg>
-    )
+    s: "FHIR HL7 Streams · Federated Queries · Audit Logs",
+    icon: <ChartPieIcon className="w-8 h-8 text-forsythia mb-4" />
   },
 ];
 
@@ -100,13 +91,10 @@ function ProductPage() {
   return (
     <Layout>
       <Seo
-        title='ARMORY - AI-Powered Enterprise Automation'
-        description='Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems.'
-        path='/' />
-      <Seo
-        title="ARMORY - AI-Powered Enterprise Automation"
-        description="Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems."
-        path="/" />
+        title="Product & Architecture - ARMORY"
+        description="Deep dive into ARMORY's four core primitives: Zero-trust runtime, Composable agents, Edge-native compute, and Federated intelligence."
+        path="/product"
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden py-24 border-b border-white/5 bg-grid">
         <div className="absolute inset-0 bg-radial-glow pointer-events-none opacity-60" />
@@ -177,7 +165,7 @@ function ProductPage() {
                 </div>
                 {i < 3 && (
                   <div className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-6 h-6 rounded-full bg-noir border border-forsythia/30 items-center justify-center">
-                    <svg className="w-3 h-3 text-forsythia" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="m8.25 4.5l7.5 7.5l-7.5 7.5" /></svg>
+                    <ChevronRightIcon className="w-3 h-3 text-forsythia" />
                   </div>
                 )}
               </div>
@@ -199,18 +187,12 @@ function ProductPage() {
 
           {/* Interactive Pipeline Visualizer */}
           <div className="mt-16 border border-white/10 bg-noir/60 rounded-2xl p-6 md:p-12 backdrop-blur relative overflow-hidden reveal-scale">
-            {/* Animated SVG connecting lines */}
-            <div className="absolute top-[88px] left-[10%] right-[10%] h-8 hidden md:block z-0 pointer-events-none">
-              <svg className="w-full h-full" fill="none">
-                <path d="M 0 4 H 1000" stroke="rgba(241,246,244,0.06)" strokeWidth="4" strokeLinecap="round" />
-                <path 
-                  d={`M 0 4 H ${activeStep * 200 + 100}`} 
-                  stroke="var(--color-forsythia)" 
-                  strokeWidth="4" 
-                  strokeLinecap="round"
-                  className="animate-dash"
-                />
-              </svg>
+            {/* Animated connecting line */}
+            <div className="absolute top-[92px] left-[10%] right-[10%] h-1 bg-white/5 hidden md:block z-0 pointer-events-none">
+              <div 
+                className="h-full bg-forsythia transition-all duration-500 ease-out"
+                style={{ width: `${(activeStep / 4) * 100}%` }}
+              />
             </div>
 
             <div className="grid gap-6 md:grid-cols-5 relative z-10">
@@ -233,9 +215,7 @@ function ProductPage() {
                       }`}
                     >
                       {isCompleted ? (
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                          <polyline points="20 6 9 17 4 12" />
-                        </svg>
+                        <span className="text-emerald-400 font-bold text-base">✓</span>
                       ) : `0${step.id}`}
                       
                       {isActive && (

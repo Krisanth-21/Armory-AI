@@ -1,6 +1,7 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { n as Layout, t as CtaButton } from "./Layout-DlHL_R3D.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/about-BKORY_0c.js
+import { t as Seo } from "./Seo-CUUaP3E4.mjs";
+import { c as CtaButton, l as Cube16SolidIcon, n as ArrowTrendingUpIcon, s as Cog8ToothIcon, t as ArrowPathIcon, u as Layout } from "./Layout-BrSet1XS.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/about-DuxmN6Da.js
 var import_jsx_runtime = require_jsx_runtime();
 var STATS = [
 	{
@@ -28,61 +29,22 @@ var VALUES = [
 	{
 		title: "Security First",
 		desc: "Every line of code, every deployment, every decision is evaluated through the lens of patient data protection.",
-		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-			className: "w-6 h-6",
-			viewBox: "0 0 24 24",
-			fill: "none",
-			stroke: "currentColor",
-			strokeWidth: "1.5",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("rect", {
-				x: "3",
-				y: "11",
-				width: "18",
-				height: "11",
-				rx: "2",
-				ry: "2"
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M7 11V7a5 5 0 0 1 10 0v4" })]
-		})
+		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cog8ToothIcon, { className: "w-6 h-6 text-forsythia" })
 	},
 	{
 		title: "Developer Empathy",
 		desc: "We build for developers who ship under pressure. Clean APIs, zero config overhead, and docs that actually help.",
-		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-			className: "w-6 h-6",
-			viewBox: "0 0 24 24",
-			fill: "none",
-			stroke: "currentColor",
-			strokeWidth: "1.5",
-			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" })
-		})
+		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cube16SolidIcon, { className: "w-6 h-6 text-forsythia" })
 	},
 	{
 		title: "Radical Transparency",
 		desc: "Open audit logs, public status pages, and compliance certificates available to every customer on every plan.",
-		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-			className: "w-6 h-6",
-			viewBox: "0 0 24 24",
-			fill: "none",
-			stroke: "currentColor",
-			strokeWidth: "1.5",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("circle", {
-				cx: "12",
-				cy: "12",
-				r: "10"
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M12 6v6l4 2" })]
-		})
+		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowPathIcon, { className: "w-6 h-6 text-forsythia" })
 	},
 	{
 		title: "Relentless Performance",
 		desc: "Sub-50ms P99 latency isn't a target — it's a hard requirement. We optimize at the hardware level to deliver it.",
-		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-			className: "w-6 h-6",
-			viewBox: "0 0 24 24",
-			fill: "none",
-			stroke: "currentColor",
-			strokeWidth: "1.5",
-			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M13 7l-4 7h3l-1 5 4-7h-3l1-5z" })
-		})
+		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowTrendingUpIcon, { className: "w-6 h-6 text-forsythia" })
 	}
 ];
 var MILESTONES = [
@@ -103,7 +65,7 @@ var MILESTONES = [
 	},
 	{
 		year: "2025",
-		title: "Series B — $48M",
+		title: "Series B â€” $48M",
 		desc: "Raised Series B led by Sequoia to scale edge infrastructure globally."
 	},
 	{
@@ -146,6 +108,12 @@ var TEAM = [
 ];
 function AboutPage() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Layout, { children: [
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Seo, {
+			title: "About ARMORY - Our Mission",
+			description: "Learn about ARMORY's mission to build the most secure AI automation platform for healthcare.",
+			path: "/about",
+			schemaType: "AboutPage"
+		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 			className: "relative overflow-hidden py-24 border-b border-white/5 bg-grid",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-radial-glow opacity-40" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -218,7 +186,7 @@ function AboutPage() {
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 								className: "mt-6 text-sm text-arctic/60 leading-relaxed",
-								children: "We believe that the most critical industry in the world shouldn't be running on the most fragile infrastructure. ARMORY provides the compliance-first, developer-friendly platform that healthcare teams need to build AI systems that actually ship — securely, reliably, and at scale."
+								children: "We believe that the most critical industry in the world shouldn't be running on the most fragile infrastructure. ARMORY provides the compliance-first, developer-friendly platform that healthcare teams need to build AI systems that actually ship â€” securely, reliably, and at scale."
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 								className: "mt-4 text-sm text-arctic/60 leading-relaxed",
