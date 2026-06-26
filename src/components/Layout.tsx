@@ -376,7 +376,7 @@ export function Layout({ children }: LayoutProps) {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-12 md:grid-cols-[1.4fr_repeat(4,1fr)]">
             <div>
-              <Logo />
+  
               <p className="mt-4 max-w-xs text-sm text-arctic/60">
                 ARMORY is the AI automation platform engineered for the world's
                 most demanding enterprise ecosystems.
