@@ -1,10 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout, CtaButton } from "@/components/Layout";
+import { Seo } from '@/components/Seo';
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About ARMORY — Our Mission" },
+      { title: "About ARMORY â€” Our Mission" },
       {
         name: "description",
         content: "Learn about ARMORY's mission to build the most secure AI automation platform for healthcare.",
@@ -53,7 +54,7 @@ const VALUES = [
   },
   {
     title: "Relentless Performance",
-    desc: "Sub-50ms P99 latency isn't a target — it's a hard requirement. We optimize at the hardware level to deliver it.",
+    desc: "Sub-50ms P99 latency isn't a target â€” it's a hard requirement. We optimize at the hardware level to deliver it.",
     icon: (
       <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M13 7l-4 7h3l-1 5 4-7h-3l1-5z" />
@@ -66,7 +67,7 @@ const MILESTONES = [
   { year: "2022", title: "Founded", desc: "Three ex-Google engineers set out to fix healthcare data automation." },
   { year: "2023", title: "First Production Deploy", desc: "Launched zero-trust runtime at Cigna Smart Health Systems." },
   { year: "2024", title: "SOC 2 & HIPAA Certified", desc: "Achieved SOC 2 Type II and HIPAA compliance certification." },
-  { year: "2025", title: "Series B — $48M", desc: "Raised Series B led by Sequoia to scale edge infrastructure globally." },
+  { year: "2025", title: "Series B â€” $48M", desc: "Raised Series B led by Sequoia to scale edge infrastructure globally." },
   { year: "2026", title: "14 Edge Regions Live", desc: "Expanded to 14 global edge regions serving 312+ healthcare facilities." },
 ];
 
@@ -82,6 +83,14 @@ const TEAM = [
 function AboutPage() {
   return (
     <Layout>
+      <Seo
+        title='ARMORY - AI-Powered Enterprise Automation'
+        description='Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems.'
+        path='/' />
+      <Seo
+        title="ARMORY - AI-Powered Enterprise Automation"
+        description="Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems."
+        path="/" />
       {/* Hero */}
       <section className="relative overflow-hidden py-24 border-b border-white/5 bg-grid">
         <div className="absolute inset-0 bg-radial-glow opacity-40" />
@@ -132,7 +141,7 @@ function AboutPage() {
                 We believe that the most critical industry in the world shouldn't be running 
                 on the most fragile infrastructure. ARMORY provides the compliance-first, 
                 developer-friendly platform that healthcare teams need to build AI systems 
-                that actually ship — securely, reliably, and at scale.
+                that actually ship â€” securely, reliably, and at scale.
               </p>
               <p className="mt-4 text-sm text-arctic/60 leading-relaxed">
                 Our team has shipped infrastructure at Google, Stripe, AWS, and Palantir. 

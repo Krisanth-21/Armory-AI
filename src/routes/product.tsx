@@ -1,11 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout, CtaButton } from "@/components/Layout";
+import { Seo } from '@/components/Seo';
 import { useState, useEffect } from "react";
 
 export const Route = createFileRoute("/product")({
   head: () => ({
     meta: [
-      { title: "Product & Architecture — ARMORY" },
+      { title: "Product & Architecture â€” ARMORY" },
       {
         name: "description",
         content: "Deep dive into ARMORY's four core primitives: Zero-trust runtime, Composable agents, Edge-native compute, and Federated intelligence.",
@@ -20,7 +21,7 @@ const PRIMITIVES = [
     n: "01",
     t: "Zero-Trust Runtime",
     d: "All workflows execute in cryptographically isolated micro-virtual machines. Features dynamic PHI redaction, localized model execution, and hardware-level IAM sandboxing.",
-    s: "HIPAA Compliant · PHI Redaction · AES-256",
+    s: "HIPAA Compliant Â· PHI Redaction Â· AES-256",
     icon: (
       <svg className="w-8 h-8 text-forsythia mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
@@ -33,7 +34,7 @@ const PRIMITIVES = [
     n: "02",
     t: "Composable Agents",
     d: "Build complex reasoning workflows by chaining models, tools, and human review steps. Control threshold variables and decision graphs via simple, declarative JSON configurations.",
-    s: "Dynamic Routing · Human-in-the-Loop · Model Agnostic",
+    s: "Dynamic Routing Â· Human-in-the-Loop Â· Model Agnostic",
     icon: (
       <svg className="w-8 h-8 text-forsythia mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <circle cx="12" cy="5" r="3" />
@@ -47,7 +48,7 @@ const PRIMITIVES = [
     n: "03",
     t: "Edge-Native Compute",
     d: "Deploy pipelines directly to regional edge nodes located close to your local clinical datacenters. Ensures ultra-low latency execution and prevents data leaving regional compliance boundaries.",
-    s: "Sub-50ms Latency · Regional Locks · Edge VMs",
+    s: "Sub-50ms Latency Â· Regional Locks Â· Edge VMs",
     icon: (
       <svg className="w-8 h-8 text-forsythia mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
@@ -58,7 +59,7 @@ const PRIMITIVES = [
     n: "04",
     t: "Federated Intelligence",
     d: "Query siloed systems (EHR databases, claim queues, historical telemetry logs) securely. Compile and extract insights without centralizing raw compliance data.",
-    s: "FHIR HL7 Streams · Federated Queries · Audit Logs",
+    s: "FHIR HL7 Streams Â· Federated Queries Â· Audit Logs",
     icon: (
       <svg className="w-8 h-8 text-forsythia mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <ellipse cx="12" cy="5" rx="9" ry="3" />
@@ -98,6 +99,14 @@ function ProductPage() {
 
   return (
     <Layout>
+      <Seo
+        title='ARMORY - AI-Powered Enterprise Automation'
+        description='Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems.'
+        path='/' />
+      <Seo
+        title="ARMORY - AI-Powered Enterprise Automation"
+        description="Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems."
+        path="/" />
       {/* Hero Section */}
       <section className="relative overflow-hidden py-24 border-b border-white/5 bg-grid">
         <div className="absolute inset-0 bg-radial-glow pointer-events-none opacity-60" />

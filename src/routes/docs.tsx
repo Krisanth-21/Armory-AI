@@ -1,11 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout, CtaButton } from "@/components/Layout";
+import { Seo } from '@/components/Seo';
 import { useState } from "react";
 
 export const Route = createFileRoute("/docs")({
   head: () => ({
     meta: [
-      { title: "API Reference & Documentation — ARMORY" },
+      { title: "API Reference & Documentation â€” ARMORY" },
       {
         name: "description",
         content: "Explore the ARMORY workflow engine API specifications and developer integrations.",
@@ -76,10 +77,10 @@ const STATUS_CODES = [
   { code: "200", desc: "Workflow created and running", color: "text-emerald-400" },
   { code: "201", desc: "Resource created successfully", color: "text-emerald-400" },
   { code: "400", desc: "Invalid payload or missing fields", color: "text-saffron" },
-  { code: "401", desc: "Authentication failed — invalid API key", color: "text-red-400" },
-  { code: "403", desc: "IAM policy denied — insufficient permissions", color: "text-red-400" },
-  { code: "429", desc: "Rate limit exceeded — retry after backoff", color: "text-saffron" },
-  { code: "500", desc: "Internal server error — contact support", color: "text-red-400" },
+  { code: "401", desc: "Authentication failed â€” invalid API key", color: "text-red-400" },
+  { code: "403", desc: "IAM policy denied â€” insufficient permissions", color: "text-red-400" },
+  { code: "429", desc: "Rate limit exceeded â€” retry after backoff", color: "text-saffron" },
+  { code: "500", desc: "Internal server error â€” contact support", color: "text-red-400" },
 ];
 
 const RATE_LIMITS = [
@@ -114,6 +115,14 @@ function DocsPage() {
 
   return (
     <Layout>
+      <Seo
+        title='ARMORY - AI-Powered Enterprise Automation'
+        description='Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems.'
+        path='/' />
+      <Seo
+        title="ARMORY - AI-Powered Enterprise Automation"
+        description="Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems."
+        path="/" />
       <div className="mx-auto max-w-7xl px-6 py-16 grid gap-12 md:grid-cols-[240px_1fr_1.2fr]">
         {/* Left Sidebar Navigation */}
         <aside className="space-y-6 text-sm border-r border-white/5 pr-6 hidden md:block">

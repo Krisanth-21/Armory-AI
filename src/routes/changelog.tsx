@@ -1,11 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
+import { Seo } from '@/components/Seo';
 import { useState } from "react";
 
 export const Route = createFileRoute("/changelog")({
   head: () => ({
     meta: [
-      { title: "Changelog — ARMORY" },
+      { title: "Changelog â€” ARMORY" },
       {
         name: "description",
         content: "Stay up to date with the latest ARMORY platform updates, features, and improvements.",
@@ -85,6 +86,14 @@ function ChangelogPage() {
 
   return (
     <Layout>
+      <Seo
+        title='ARMORY - AI-Powered Enterprise Automation'
+        description='Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems.'
+        path='/' />
+      <Seo
+        title="ARMORY - AI-Powered Enterprise Automation"
+        description="Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems."
+        path="/" />
       {/* Hero */}
       <section className="relative overflow-hidden py-24 border-b border-white/5 bg-grid">
         <div className="absolute inset-0 bg-radial-glow opacity-30" />
@@ -180,7 +189,7 @@ function ChangelogPage() {
           <div className="mt-16 text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-noir/40 px-5 py-2.5 font-mono-tech text-[11px] uppercase tracking-wider text-arctic/40">
               <span className="h-1.5 w-1.5 rounded-full bg-arctic/20" />
-              Showing latest 5 releases · 48 total releases
+              Showing latest 5 releases Â· 48 total releases
             </div>
           </div>
         </div>

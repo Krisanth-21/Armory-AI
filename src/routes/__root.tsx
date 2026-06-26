@@ -11,10 +11,15 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { Seo } from "@/components/Seo";
 
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
+      <Seo
+        title='ARMORY - AI-Powered Enterprise Automation'
+        description='Deploy secure AI agents, data pipelines, and workflow automation for demanding enterprise ecosystems.'
+        path='/' />
       <div className="max-w-md text-center">
         <h1 className="text-7xl font-bold text-foreground">404</h1>
         <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
@@ -77,10 +82,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "ARMORY — Power your future with AI" },
+      { title: "ARMORY â€” Power your future with AI" },
       { name: "description", content: "ARMORY is the AI automation platform for healthcare. Build agents, automate processes and ship secure neural workflows." },
       { name: "author", content: "ARMORY" },
-      { property: "og:title", content: "ARMORY — Power your future with AI" },
+      { property: "og:title", content: "ARMORY â€” Power your future with AI" },
       { property: "og:description", content: "Build secure AI workflows, custom agents and process automation for modern healthcare." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

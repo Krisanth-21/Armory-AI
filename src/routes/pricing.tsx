@@ -1,11 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout, CtaButton } from "@/components/Layout";
+import { Seo } from '@/components/Seo';
 import { useState, useRef, useEffect } from "react";
 
 export const Route = createFileRoute("/pricing")({
   head: () => ({
     meta: [
-      { title: "Pricing & Calculator — ARMORY" },
+      { title: "Pricing & Calculator â€” ARMORY" },
       {
         name: "description",
         content: "Calculate your ARMORY edge VM runtimes and select custom healthcare compliance billing cycles.",
@@ -24,28 +25,28 @@ const BASE_PRICING = {
 
 const SYMBOLS = {
   USD: "$",
-  EUR: "€",
-  INR: "₹",
+  EUR: "â‚¬",
+  INR: "â‚¹",
 };
 
 const FEATURE_COMPARISON = [
   { feature: "Monthly claims volume", dev: "1,000", pro: "50,000", ent: "Unlimited" },
   { feature: "Edge compute nodes", dev: "Shared", pro: "Dedicated", ent: "Isolated hardware" },
   { feature: "Model providers", dev: "3", pro: "12", ent: "Unlimited + custom" },
-  { feature: "SSO / SAML", dev: "—", pro: "✓", ent: "✓" },
+  { feature: "SSO / SAML", dev: "â€”", pro: "âœ“", ent: "âœ“" },
   { feature: "Audit log retention", dev: "7 days", pro: "90 days", ent: "Unlimited" },
-  { feature: "BAA agreement", dev: "—", pro: "✓", ent: "✓" },
-  { feature: "SLA guarantee", dev: "—", pro: "99.9%", ent: "99.99%" },
+  { feature: "BAA agreement", dev: "â€”", pro: "âœ“", ent: "âœ“" },
+  { feature: "SLA guarantee", dev: "â€”", pro: "99.9%", ent: "99.99%" },
   { feature: "Support level", dev: "Community", pro: "24/7 chat", ent: "Dedicated engineer" },
-  { feature: "Custom compliance policies", dev: "—", pro: "—", ent: "✓" },
-  { feature: "On-premise deployment", dev: "—", pro: "—", ent: "✓" },
+  { feature: "Custom compliance policies", dev: "â€”", pro: "â€”", ent: "âœ“" },
+  { feature: "On-premise deployment", dev: "â€”", pro: "â€”", ent: "âœ“" },
 ];
 
 const PRICING_FAQS = [
   { q: "Can I switch plans at any time?", a: "Yes. Upgrades take effect immediately, and downgrades apply at the end of your current billing cycle. No penalties or lock-in contracts." },
   { q: "What counts as a 'claim'?", a: "A claim is any single workflow execution, regardless of how many pipeline stages it passes through. Batch operations count as one claim per payload item." },
   { q: "Do you offer volume discounts?", a: "Enterprise plans include custom volume pricing. Contact our sales team for a tailored quote based on your projected throughput." },
-  { q: "Is there a free trial for Pro?", a: "Yes — all new accounts get 14 days of Professional features free. No credit card required to start." },
+  { q: "Is there a free trial for Pro?", a: "Yes â€” all new accounts get 14 days of Professional features free. No credit card required to start." },
 ];
 
 /* ---------- Isolated Price Component ---------- */
@@ -196,9 +197,9 @@ function PricingPage() {
                   Ideal for testing pipelines and building local medical agent graphs.
                 </p>
                 <ul className="mt-6 space-y-2 text-xs text-arctic/70 font-mono-tech">
-                  <li>✓ 1,000 free claims/mo</li>
-                  <li>✓ Shared edge compute nodes</li>
-                  <li>✓ Community support channels</li>
+                  <li>âœ“ 1,000 free claims/mo</li>
+                  <li>âœ“ Shared edge compute nodes</li>
+                  <li>âœ“ Community support channels</li>
                 </ul>
               </div>
               <button className="mt-8 w-full border border-white/10 bg-white/[0.02] hover:border-forsythia hover:text-forsythia rounded-full py-2.5 text-xs uppercase tracking-wider font-mono-tech cursor-pointer transition">
@@ -224,10 +225,10 @@ function PricingPage() {
                   Engineered for growing clinics and healthcare teams automate billing workflow.
                 </p>
                 <ul className="mt-6 space-y-2 text-xs text-arctic/70 font-mono-tech">
-                  <li>✓ 50,000 claims/mo</li>
-                  <li>✓ Dedicated edge VM instances</li>
-                  <li>✓ Business Associate Agreement (BAA)</li>
-                  <li>✓ 24/7 technical assistance</li>
+                  <li>âœ“ 50,000 claims/mo</li>
+                  <li>âœ“ Dedicated edge VM instances</li>
+                  <li>âœ“ Business Associate Agreement (BAA)</li>
+                  <li>âœ“ 24/7 technical assistance</li>
                 </ul>
               </div>
               <button className="mt-8 w-full bg-forsythia text-noir hover:bg-saffron rounded-full py-2.5 text-xs uppercase tracking-wider font-mono-tech cursor-pointer transition font-semibold">
@@ -250,10 +251,10 @@ function PricingPage() {
                   For large hospitals and networks demanding dedicated regional nodes.
                 </p>
                 <ul className="mt-6 space-y-2 text-xs text-arctic/70 font-mono-tech">
-                  <li>✓ Unlimited transaction volume</li>
-                  <li>✓ Isolated edge hardware VMs</li>
-                  <li>✓ Custom compliance SLA</li>
-                  <li>✓ Dedicated solutions engineer</li>
+                  <li>âœ“ Unlimited transaction volume</li>
+                  <li>âœ“ Isolated edge hardware VMs</li>
+                  <li>âœ“ Custom compliance SLA</li>
+                  <li>âœ“ Dedicated solutions engineer</li>
                 </ul>
               </div>
               <button className="mt-8 w-full border border-white/10 bg-white/[0.02] hover:border-forsythia hover:text-forsythia rounded-full py-2.5 text-xs uppercase tracking-wider font-mono-tech cursor-pointer transition">

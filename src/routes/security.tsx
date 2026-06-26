@@ -1,11 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout, CtaButton } from "@/components/Layout";
+import { Seo } from '@/components/Seo';
 import { useState, useEffect } from "react";
 
 export const Route = createFileRoute("/security")({
   head: () => ({
     meta: [
-      { title: "Security & Compliance — ARMORY" },
+      { title: "Security & Compliance â€” ARMORY" },
       {
         name: "description",
         content: "ARMORY is engineered with zero-trust architecture to satisfy HIPAA, SOC 2 Type II, and enterprise healthcare compliance standards.",
@@ -40,11 +41,11 @@ const CERTIFICATIONS = [
 ];
 
 const DATA_FLOW_STEPS = [
-  { step: "01", name: "Data Ingress", desc: "Encrypted TLS 1.3 channel receives payload at regional edge node", icon: "↓" },
-  { step: "02", name: "PHI Detection", desc: "NLP scanner identifies and flags protected health information fields", icon: "⊛" },
-  { step: "03", name: "Token Redaction", desc: "PHI tokens replaced with reversible cryptographic hashes (AES-256)", icon: "◈" },
-  { step: "04", name: "Isolated Processing", desc: "Redacted payload processed in micro-VM with no network egress", icon: "⬡" },
-  { step: "05", name: "Audit Commit", desc: "Cryptographically signed audit log committed to immutable ledger", icon: "✓" },
+  { step: "01", name: "Data Ingress", desc: "Encrypted TLS 1.3 channel receives payload at regional edge node", icon: "â†“" },
+  { step: "02", name: "PHI Detection", desc: "NLP scanner identifies and flags protected health information fields", icon: "âŠ›" },
+  { step: "03", name: "Token Redaction", desc: "PHI tokens replaced with reversible cryptographic hashes (AES-256)", icon: "â—ˆ" },
+  { step: "04", name: "Isolated Processing", desc: "Redacted payload processed in micro-VM with no network egress", icon: "â¬¡" },
+  { step: "05", name: "Audit Commit", desc: "Cryptographically signed audit log committed to immutable ledger", icon: "âœ“" },
 ];
 
 function SecurityPage() {
@@ -78,7 +79,6 @@ function SecurityPage() {
 
     return () => clearInterval(interval);
   }, []);
-
   return (
     <Layout>
       {/* Hero */}

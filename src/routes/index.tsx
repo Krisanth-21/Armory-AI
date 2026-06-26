@@ -13,13 +13,13 @@ export const Route = createFileRoute("/")(
   {
   head: () => ({
     meta: [
-      { title: "ARMORY — Power your future with AI" },
+      { title: "ARMORY â€” Power your future with AI" },
       {
         name: "description",
         content:
           "ARMORY is the AI automation platform for healthcare. Build agents, automate processes and ship secure neural workflows.",
       },
-      { property: "og:title", content: "ARMORY — Power your future with AI" },
+      { property: "og:title", content: "ARMORY â€” Power your future with AI" },
       {
         property: "og:description",
         content:
@@ -34,6 +34,7 @@ export const Route = createFileRoute("/")(
 function SearchIcon({ className = "" }: { className?: string }) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className={className}>
+
       <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33l-1.42 1.42l-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
     </svg>
   );
@@ -158,7 +159,7 @@ function Hero() {
           <CtaButton>Build a Workflow</CtaButton>
           <div className="flex items-center gap-3 font-mono-tech text-[11px] uppercase tracking-wider text-arctic/50">
             <span className="h-px w-8 bg-white/15" />
-            SOC 2 · HIPAA · ISO 27001
+            SOC 2 Â· HIPAA Â· ISO 27001
           </div>
         </div>
 
@@ -238,13 +239,13 @@ function Integrations() {
   );
 }
 
-/* ---------- Feature: Bento ↔ Accordion w/ state continuity ---------- */
+/* ---------- Feature: Bento â†” Accordion w/ state continuity ---------- */
 const FEATURES = [
   {
     k: "Secure Guard",
     t: "Zero-trust runtime",
     d: "End-to-end encryption, PHI redaction and per-agent IAM enforced at every hop.",
-    s: "AES-256 · HIPAA",
+    s: "AES-256 Â· HIPAA",
     icon: (className?: string) => <LinkSolidIcon className={className} />,
   },
   {
@@ -323,7 +324,7 @@ function FeatureArchitecture() {
                       <span className="flex h-6 w-6 items-center justify-center rounded bg-forsythia/10 text-forsythia">
                         {f.icon("h-3.5 w-3.5")}
                       </span>
-                      0{i + 1} · {f.k}
+                      0{i + 1} Â· {f.k}
                     </span>
                     <span
                       className={`transition-transform duration-300 ease-in-out ${
@@ -389,7 +390,7 @@ function FeatureArchitecture() {
                           isActive ? "text-forsythia" : "text-arctic/40"
                         }`}
                       >
-                        0{i + 1} · {f.k}
+                        0{i + 1} Â· {f.k}
                       </span>
                     </div>
                     <span className="font-mono-tech text-[11px] text-arctic/30">{f.s}</span>
@@ -708,8 +709,8 @@ function CaseStudies() {
 type Currency = "USD" | "EUR" | "INR";
 const CURRENCY: Record<Currency, { sym: string; factor: number }> = {
   USD: { sym: "$", factor: 1 },
-  EUR: { sym: "€", factor: 0.92 },
-  INR: { sym: "₹", factor: 83 },
+  EUR: { sym: "â‚¬", factor: 0.92 },
+  INR: { sym: "â‚¹", factor: 83 },
 };
 
 const PLANS = [
@@ -749,8 +750,8 @@ function Pricing() {
     baseRates: [99, 499, 2400],
     regions: {
       USD: { symbol: "$", factor: 1.0 },
-      EUR: { symbol: "€", factor: 0.92 },
-      INR: { symbol: "₹", factor: 83.0 }
+      EUR: { symbol: "â‚¬", factor: 0.92 },
+      INR: { symbol: "â‚¹", factor: 83.0 }
     }
   };
 
@@ -843,7 +844,7 @@ function Pricing() {
                 onClick={() => handleCycleChange(true)}
                 className="rounded-full px-4 py-1.5 transition-colors duration-200 text-arctic/70 hover:text-arctic cursor-pointer"
               >
-                Annual <span className="text-saffron">−20%</span>
+                Annual <span className="text-saffron">âˆ’20%</span>
               </button>
             </div>
             <div className="relative">
@@ -853,11 +854,11 @@ function Pricing() {
                 className="appearance-none rounded-full border border-white/10 bg-noir/60 px-4 py-2 pr-8 font-mono-tech text-[11px] uppercase tracking-wider text-arctic outline-none transition-colors duration-200 hover:border-forsythia cursor-pointer"
               >
                 <option value="USD">USD $</option>
-                <option value="EUR">EUR €</option>
-                <option value="INR">INR ₹</option>
+                <option value="EUR">EUR â‚¬</option>
+                <option value="INR">INR â‚¹</option>
               </select>
               <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-arctic/50">
-                ▾
+                â–¾
               </span>
             </div>
           </div>
@@ -937,11 +938,11 @@ const FAQS = [
   },
   {
     q: "Is ARMORY HIPAA compliant?",
-    a: "Yes — HIPAA, HITRUST, SOC 2 Type II and ISO 27001. We sign BAAs with every customer on Pro and Enterprise plans.",
+    a: "Yes â€” HIPAA, HITRUST, SOC 2 Type II and ISO 27001. We sign BAAs with every customer on Pro and Enterprise plans.",
   },
   {
     q: "How long does deployment take?",
-    a: "Most teams ship their first production workflow in under 14 days. Enterprise federations average 6–8 weeks with our solutions team.",
+    a: "Most teams ship their first production workflow in under 14 days. Enterprise federations average 6â€“8 weeks with our solutions team.",
   },
 ];
 
