@@ -19,7 +19,7 @@ A sleek, modern landing page for a SaaS product, built with Vite, React, and Tai
 ---
 
 ## Demo
-You can see a live preview of the site after you push it to Vercel (see *[Deploy to Vercel](https://armoryweb.vercel.app/)* below).
+You can see a live preview of the site after you push it to Vercel (see *[Production Link](https://armoryweb.vercel.app/)* below).
 
 ---
 
